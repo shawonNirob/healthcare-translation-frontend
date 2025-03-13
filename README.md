@@ -19,7 +19,26 @@ Access the live application at: [https://healthcare-translation-pi.vercel.app/](
 - **React**: Frontend framework
 - **CSS**: Custom styling with responsive design
 - **Web Speech API**: For speech recognition and synthesis
-- **Axios**: For API requests to the backend service
+- **Axios**: For API requests to the backend 
+
+## AI Tools Used
+This project was developed with assistance from the following AI tools:
+
+- **Claude 3.7 Sonnet**: Used for code generation, debugging, and responsive design optimization. Claude helped implement the speech recognition functionality, language support detection, and CSS media queries for responsive design.
+
+- **OpenAI API**: Powers the backend translation service, enhancing medical terminology in translations.
+
+The AI tools were primarily used for:
+- Implementing complex Web Speech API integrations
+- Optimizing responsive design across device sizes
+- Debugging cross-browser compatibility issues
+- Generating comprehensive documentation
+- Suggesting performance improvements
+
+## Security Considerations
+- **Input Validation**: All user inputs are validated before processing
+- **Error Handling**: Comprehensive error handling prevents exposure of sensitive information
+- **CORS Configuration**: Proper CORS settings to prevent unauthorized API access
 
 ## Setup
 
