@@ -12,6 +12,8 @@ The Healthcare Translation Frontend is a React-based web application designed to
 - **Manual Text Input**: Alternative text input for environments where speech recognition isn't available
 - **Language Support Indicators**: Clear feedback about languages with limited speech synthesis support
 
+## Live Demo
+Access the live application at: [https://healthcare-translation-pi.vercel.app/](https://healthcare-translation-pi.vercel.app/)
 
 ## Technology Stack
 - **React**: Frontend framework
