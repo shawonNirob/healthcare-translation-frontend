@@ -1,0 +1,234 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #062a72;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(3, 56, 63);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Main App Container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f9;
+}
+
+.app-header {
+  background-color: #3f51b5;
+  color: white;
+  padding: 0.8rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.app-main {
+  flex: 1;
+  padding: 1rem;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.app-footer {
+  background-color: #3f51b5;
+  color: white;
+  text-align: center;
+  padding: 0.8rem;
+  margin-top: auto;
+}
+
+/* Card Styles */
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Button Styles */
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+  outline: none;
+}
+
+.btn-primary {
+  background-color: #3f51b5;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #303f9f;
+}
+
+/* Form Controls */
+.form-control {
+  margin-bottom: 1rem;
+}
+
+.form-control label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.form-control input,
+.form-control select,
+.form-control textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* Small screens (laptops 13-14") */
+@media (max-width: 1366px) {
+  .app-main {
+    max-width: 700px;
+    padding: 0.8rem;
+  }
+  
+  .app-header h1 {
+    font-size: 1.3rem;
+  }
+}
+
+/* Medium screens (laptops 15-16") */
+@media (min-width: 1367px) and (max-width: 1920px) {
+  .app-main {
+    max-width: 900px;
+    padding: 1.5rem;
+  }
+  
+  .app-header {
+    padding: 1rem;
+  }
+  
+  .app-header h1 {
+    font-size: 1.7rem;
+  }
+  
+  .app-footer {
+    padding: 1rem;
+  }
+}
+
+/* Large screens (desktop monitors 24-27") */
+@media (min-width: 1921px) {
+  .app-main {
+    max-width: 1200px;
+    padding: 2rem;
+  }
+  
+  .app-header {
+    padding: 1.2rem;
+  }
+  
+  .app-header h1 {
+    font-size: 2rem;
+  }
+  
+  .app-footer {
+    padding: 1.2rem;
+    font-size: 1.1rem;
+  }
+}
+
+/* Extra large screens (30"+ monitors) */
+@media (min-width: 2560px) {
+  .app-main {
+    max-width: 1500px;
+    padding: 2.5rem;
+  }
+  
+  .app-header h1 {
+    font-size: 2.2rem;
+  }
+}
+
+/* Large desktop monitors (27" and above) */
+@media (min-width: 1920px) and (min-height: 1080px) {
+  .translation-panel {
+    max-width: 1600px;
+    margin: 0 auto;
+    transform: scale(1.05);
+    transform-origin: center top;
+  }
+}
+
+/* QHD/2K monitors (2560x1440) */
+@media (min-width: 2560px) and (min-height: 1440px) {
+  .translation-panel {
+    max-width: 1800px;
+    transform: scale(1.1);
+  }
+}
+
+/* 4K/UHD monitors (3840x2160) */
+@media (min-width: 3840px) and (min-height: 2160px) {
+  .translation-panel {
+    max-width: 2000px;
+    transform: scale(1.15);
+  }
+}
+
+/* Ultra-wide monitors (3440x1440) */
+@media (min-width: 3440px) and (min-height: 1440px) {
+  .translation-panel {
+    max-width: 2200px;
+    transform: scale(1.1);
+  }
+}
+
+/* 5K monitors (5120x2880) */
+@media (min-width: 5120px) and (min-height: 2880px) {
+  .translation-panel {
+    max-width: 2400px;
+    transform: scale(1.2);
+  }
+}

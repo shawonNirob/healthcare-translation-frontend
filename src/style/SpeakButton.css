@@ -1,0 +1,116 @@
+/* src/components/SpeakButton.css */
+.speak-button-large {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    background-color: #3f51b5;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .speak-button-large:hover {
+    background-color: #303f9f;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .speak-button-large:active {
+    transform: scale(0.98);
+  }
+
+  .speak-button-large:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(63, 81, 181, 0.3);
+  }
+
+  /* Add this style for the listening state */
+
+  .speak-button-large.listening {
+    background-color: #f44336;
+    animation: pulse 1.5s infinite;
+  }
+
+  @keyframes pulse {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.7;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  /* Small screens (laptops 13-14") */
+  @media (max-width: 1366px) {
+    .speak-button-large {
+      padding: 0.7rem;
+      font-size: 1.1rem;
+    }
+  }
+
+  /* Medium screens (laptops 15-16") */
+  @media (min-width: 1367px) and (max-width: 1920px) {
+    .speak-button-large {
+      padding: 0.9rem;
+      font-size: 1.3rem;
+      border-radius: 7px;
+    }
+  }
+
+  /* Large screens (desktop monitors 24-27") */
+  @media (min-width: 1921px) {
+    .speak-button-large {
+      padding: 1rem;
+      font-size: 1.5rem;
+      border-radius: 8px;
+    }
+  }
+
+  /* Extra large screens (30"+ monitors) */
+  @media (min-width: 2560px) {
+    .speak-button-large {
+      padding: 1.2rem;
+      font-size: 1.7rem;
+      border-radius: 10px;
+    }
+  }
+
+  /* Mobile screens */
+  @media (max-width: 768px) {
+    .speak-button-large {
+      padding: 0.7rem;
+      font-size: 1.1rem;
+    }
+  }
+
+  /* Adjust speak button for large screens */
+  @media (min-width: 1920px) {
+    .speak-button-large {
+      font-size: 1.1rem;
+      padding: 12px 24px;
+    }
+  }
+
+  @media (min-width: 2560px) {
+    .speak-button-large {
+      font-size: 1.2rem;
+      padding: 14px 28px;
+    }
+  }
+
+  @media (min-width: 3840px) {
+    .speak-button-large {
+      font-size: 1.3rem;
+      padding: 16px 32px;
+    }
+  }
