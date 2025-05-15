@@ -1,4 +1,4 @@
-## Healthcare Translation Frontend
+## Healthcare Translation AI
 Convert spoken words into text using browser's speech recognition.
 
 ## Screenshot
